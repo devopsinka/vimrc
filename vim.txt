@@ -1,0 +1,51 @@
+set nocompatible             
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+set number
+syntax on
+set expandtab
+set tabstop=2
+set hlsearch
+set incsearch
+set noeb
+set vb
+set backspace=indent,eol,start
+
+
+map <C-n> :NERDTreeToggle<CR>
+let g:mapleader= ','
+map <Leader> <Plug>(easymotion-prefix)
+let g:airline#extensions#tabline#enabled = 1
+let g:mta_use_matchparen_group = 1
+
+colorscheme monokai
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+call plug#begin('~/.vim/plugged')
+Plug 'kien/ctrlp.vim'
+Plug 'lervag/vimtex'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
+Plug 'easymotion/vim-easymotion'
+Plug 'airblade/vim-gitgutter'
+Plug 'mattn/emmet-vim'
+call plug#end()
+
+
+
+call vundle#end() 
+filetype plugin indent on    
+
+execute pathogen#infect()
+filetype plugin indent on
+
+
