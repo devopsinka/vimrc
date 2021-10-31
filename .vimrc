@@ -17,6 +17,8 @@ set noswapfile
 set clipboard=unnamed
 
 let g:NERDTreeChDirMode = 2
+let g:tablineclosebutton=1
+
 
 " CTRL-C and CTRL-Insert are Copy
 nnoremap <C-a> ggmqvG"+y'q
@@ -47,6 +49,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin  'scrooloose/nerdtree.git'
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
